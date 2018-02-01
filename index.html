@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div >
+        <form action="file.php" id="form" method="POST">
+            <div id="1">
+                <select name="field[]">
+                    <option value="size">size</option>
+                    <option value="forks">forks</option>
+                    <option value="stars">stars</option>
+                    <option value="followers">followers</option>
+                </select>
+                <select name="operator[]">
+                    <option value=">"> > </option>
+                    <option value="<"> < </option>
+                    <option value="="> = </option>
+                </select>
+                <input type="number" name="value[]">
+                <input type="button" value="Delete" onclick="Delete(1)">
+            </div>
+
+
+        </form>
+    ----------------------- <br>
+    <input type="button" value="Apply" onclick="submit()">
+    <input type="button" value="clear" onclick="Clear()">
+    <input type="button" value="Add rule" onclick="addRule()">
+</div>
+
+</body>
+</html>
+
+
